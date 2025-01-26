@@ -4,8 +4,8 @@ import { ModListComponent } from './mod-list/mod-list.component';
 import { ModDetailComponent } from './mod-detail/mod-detail.component';
 
 @NgModule({
-  declarations: [ModListComponent],
+  declarations: [ModListComponent, ModDetailComponent],
   imports: [CommonModule],
-  exports: [ModListComponent, ModDetailComponent],
+  exports: [ModListComponent],
 })
 export class ModModule {}
