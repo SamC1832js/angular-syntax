@@ -1,0 +1,16 @@
+<h2>Mod List</h2>
+<ul>
+  <li
+    *ngFor="let mod of mods"
+    (click)="onSelect(mod)"
+    [class.selected]="mod === selectedMod"
+  >
+    <span>{{ mod.id }}</span> {{ mod.name }}
+  </li>
+</ul>
+
+<app-mod-detail
+  *ngIf="selectedMod"
+  [detail]="selectedMod"
+  (delete)="HandleRemove(selectedMod)"
+></app-mod-detail>

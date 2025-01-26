@@ -1,0 +1,7 @@
+<div *ngIf="detail">
+  <h2>{{ detail.name }} Details</h2>
+  <div><span>id: </span>{{ detail.id }}</div>
+  <div><span>name: </span>{{ detail.name }}</div>
+  <div><span>description: </span>{{ detail.description }}</div>
+  <button (click)="OnDelete()">Delete Mod</button>
+</div>
