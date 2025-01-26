@@ -1,7 +1,22 @@
 {
   "mod": [
-    { "id": 1, "name": "Mod 1", "description": "This is the first mod" },
-    { "id": 2, "name": "Mod 2", "description": "This is the second mod" },
-    { "id": 3, "name": "Mod 3", "description": "This is the third mod" }
+    {
+      "id": 1,
+      "name": "Mod 1",
+      "description": "This is the first mod",
+      "isFree": true
+    },
+    {
+      "id": 2,
+      "name": "Mod 2",
+      "description": "This is the second mod",
+      "isFree": true
+    },
+    {
+      "id": 3,
+      "name": "Mod 3",
+      "description": "This is the third mod",
+      "isFree": true
+    }
   ]
 }

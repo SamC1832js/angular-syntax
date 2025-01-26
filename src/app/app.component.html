@@ -1,9 +1,14 @@
 <app-mod-list></app-mod-list>
-<p>{{ title }}</p>
-<!-- <img [src]="imgsrc1" /> -->
-<input [(ngModel)]="username" />
-{{ username }}
-<input #phone />
-<button (click)="onClickMethod(phone.value)">click me</button>
-<button (click)="toggleactive()">toggle</button>
+<app-mod-template-form></app-mod-template-form>
+
 <router-outlet></router-outlet>
+<div>
+  <a
+    *ngFor="let link of navLinks"
+    routerLink="{{ link.link }}"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: link.exact }"
+  >
+    {{ link.name }}></a
+  >
+</div>

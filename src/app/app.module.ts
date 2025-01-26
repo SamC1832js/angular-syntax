@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { ModModule } from './mod/mod.module';
 import { ModService } from './service/mod.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './notfound/notfound.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NotFoundComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

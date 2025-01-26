@@ -9,6 +9,9 @@ const MOD_API = 'http://localhost:3000/mod';
 export class ModService {
   constructor(private http: HttpClient) {}
 
+  getMod(id: number) {
+    return this.http.get<Mod>(`${MOD_API}/${id}`);
+  }
   getMods(): Observable<Mod[]> {
     return this.http.get<Mod[]>(MOD_API);
   }

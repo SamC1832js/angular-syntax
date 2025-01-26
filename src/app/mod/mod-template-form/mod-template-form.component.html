@@ -1,0 +1,24 @@
+<form #form="ngForm" (ngSubmit)="handleSubmit(form)">
+  Mods: <input [(ngModel)]="mod.name" name="name" />
+  <label>
+    <input
+      type="radio"
+      name="isFree"
+      [value]="true"
+      #modName="ngModel"
+      [ngModel]="mod.isFree"
+    />
+    <input type="radio" name="isFree" [value]="false" [ngModel]="mod.isFree" />
+  </label>
+  <label
+    >Mod Type:
+    <select name="modType" [ngModel]="mod?.name">
+      <option *ngFor="let type of modType" [value]="type.value">
+        {{ type.value }}
+      </option>
+    </select></label
+  >
+  <button type="submit" [disabled]="form.invalid">Submit</button>
+</form>
+< > MODEL: {{ mod | json }} FORM: {{ form.value | json }} ERROR:
+<div *ngIf="!modName.pristine">not pristine</div>
